@@ -1,0 +1,53 @@
+{
+  "title": "Random Form",
+  "narration": "Demo",
+  "type": "object",
+  "properties": {
+    "username": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 15,
+      "pattern": "^[a-zA-Z0-9_]+$",
+      "description": "Enter your username",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true,
+      "pattern": "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$",
+      "description": "Enter your email address"
+    },
+    "age": {
+      "type": "integer",
+      "minValue": 18,
+      "maxValue": 99,
+      "required": true,
+      "description": "Enter your age"
+    },
+    "salary": {
+      "type": "number",
+      "minValue": 1000,
+      "maxValue": 100000,
+      "description": "Enter your salary"
+    },
+    "gender": {
+      "type": "string",
+      "enum": ["male", "female", "other"],
+      "enumNames": ["Male", "Female", "Other"],
+      "required": true,
+      "description": "Select your gender"
+    },
+    "bag": {
+      "type": "boolean",
+      "title": "need plastic bag?"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active", "inactive"],
+      "enumNames": ["Active", "Inactive"],
+      "widget": "radio",
+      "required": true,
+      "description": "Select your account status"
+    }
+  }
+}

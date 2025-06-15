@@ -1,0 +1,23 @@
+@import "../scss/fonts";
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    a {
+      text-decoration: none;
+      .text {
+        @include heading1();
+        margin: 3vh;
+        color: #000000;
+      }
+    }
+  }
+}
