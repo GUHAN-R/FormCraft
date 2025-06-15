@@ -190,7 +190,7 @@ const FormRenderer = ({ schema, onClose, refreshTableData, schemaId }) => {
   return (
     <>
       {contextHolder}
-      <div className={style.container}>
+      <div>
         <Form
           form={form}
           layout="vertical"

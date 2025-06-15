@@ -58,5 +58,8 @@ ALTER TABLE forms
 ALTER TABLE forms
   ADD CONSTRAINT fk_schemas_forms
   FOREIGN KEY (schema_id) REFERENCES schemas(schema_id);
+  
+  -- default user.
+  insert into users(user_id,name,email,password) values('1', 'Guhan', 'guhan@gmail.com','12345');
 
 COMMIT;
